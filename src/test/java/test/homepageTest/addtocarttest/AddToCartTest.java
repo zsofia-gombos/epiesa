@@ -22,6 +22,7 @@ public class AddToCartTest extends BaseTest {
         addtocart.clickpieseCAPDEBARA();
         addtocart.clickadaugaINCOSbutton();
         addtocart.clickcosulmeubutton();
+        Assert.assertTrue(addtocart.checkProduct(),"Cosul tau este gol is displayed");
     }
 
 

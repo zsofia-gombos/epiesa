@@ -88,10 +88,4 @@ public class HomePage extends BasePage {
         driver.findElement(selectPutere).click();
         driver.findElement(enterPutere).sendKeys(putere);
     }
-    public void scrollToElement(){
-        WebElement element = driver.findElement(filtruuleiLink);
-        Actions actions = new Actions(driver);
-        actions.moveToElement(element);
-        actions.perform();
-    }
 }

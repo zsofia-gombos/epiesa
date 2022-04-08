@@ -19,13 +19,14 @@ public class AddToCart extends BasePage {
     private By pieseCAPDEBARA = By.xpath("//a[@href='/cap-de-bara-daf-45-fa-45-120-06-diesel-116-cai-trucktec-automotive-02-31-277/504435/200513/epsitem-2003805/']");
     private By adaugaINCOSbutton = By.xpath("//button[@class='btn_red product_button new--cart']");
     private By cosulmeubutton = By.xpath("//a/span[@class='text']");
+    private By product = By.xpath("//h2['COSUL TAU ESTE GOL']");
 
 
 
     private AddToCart(){
     }
     public static AddToCart getInstance(){
-        if (instance ==null){
+        if (instance == null){
             instance = new AddToCart();
         }
         return instance;
@@ -65,6 +66,11 @@ public class AddToCart extends BasePage {
     public void clickcosulmeubutton(){
         LOG.info("Click Cosul meu button");
         driver.findElement(cosulmeubutton).click();
+    }
+    public boolean checkProduct(){
+        LOG.info("Check if Cosul tau este gol is displayed");
+        return driver.findElement(product).isDisplayed();
+
     }
 
 }
