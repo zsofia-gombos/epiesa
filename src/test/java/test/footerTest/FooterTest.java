@@ -21,7 +21,19 @@ public class FooterTest extends BaseTest {
         driver.navigate().back();
         footer.clickmagazinCJ();
         driver.navigate().back();
-
+        footer.clickmarciauto();
+        driver.navigate().back();
+        footer.clickgarantiesiretur();
+        driver.navigate().back();
+        footer.clicktermenisiconditii();
+        driver.navigate().back();
+        footer.clicklivrare();
+        driver.navigate().back();
+        footer.clickcontact();
+        driver.navigate().back();
+        footer.clickconfidentialitate();
+        driver.navigate().back();
+        footer.clickANPC();
 
 
     }
